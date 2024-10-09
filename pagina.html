@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione del consiglio comunale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #secondButton {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Registrazione del consiglio comunale</h1>
+
+    <button id="firstButton" onclick="showSecondButton()">Clicca qui</button>
+
+    <button id="secondButton">Pensavi eh?</button>
+
+    <script>
+        function showSecondButton() {
+            document.getElementById('firstButton').style.display = 'none';
+            document.getElementById('secondButton').style.display = 'inline-block';
+        }
+    </script>
+
+</body>
+</html>
